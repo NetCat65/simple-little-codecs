@@ -1,0 +1,11 @@
+//Lottozahlengenerator
+var ziehung = Set<Int>()
+
+while ziehung.count < 7
+    {
+  var lottozahl = Int(arc4random_uniform(49)+1)
+        
+    ziehung.insert(lottozahl)
+    }
+
+print("Die Lottozahlen lauten \(ziehung.dropLast().sorted()), die Zusatzzahl lautet \(ziehung.dropFirst(6).sorted())" )
